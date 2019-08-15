@@ -1,0 +1,32 @@
+<div class="shop-car">
+  <div class="info-box">
+    <img class="shop-img" [src]="shopInfo.logo" />
+    <div class="shop-info">
+      <div class="shop-title">
+        <h3>{{shopInfo.title}}</h3>
+        <span>{{shopInfo.distance}}</span>
+      </div>
+      <div class="shop-addr">
+        <p class="main-good">主营：{{shopInfo.mainGood}}</p>
+        <p class="addr">地址：{{shopInfo.addr}}</p>
+      </div>
+      <div class="other-info">
+        <ul class="follow-evaluate">
+          <li class="follow">
+            关注数：
+            <span>{{shopInfo.follow}}</span>
+          </li>
+          <li class="evaluate">
+            好评率：
+            <span>{{shopInfo.evaluate}}</span>
+            <span class="shop-badge" *ngIf="shopInfo.badge">{{shopInfo.badge}}</span>
+          </li>
+        </ul>
+        <div class="enter-shop" *ngIf="shopInfo.enterShop" (click)="enterShop()">进店</div>
+      </div>
+    </div>
+  </div>
+  <div class="img-box" *ngIf="shopInfo.goodImgList">
+    <img *ngFor="let item of shopInfo.goodImgList" [src]="item.goodImg" (click)="enterGood(item.goodId)">
+  </div>
+</div>

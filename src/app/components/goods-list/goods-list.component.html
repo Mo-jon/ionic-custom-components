@@ -1,0 +1,18 @@
+<div class="goods-list-component">
+  <ion-card class="goods-card" *ngFor="let item of listData" (click)="selectGoods(item.id)">
+    <ion-card-header class="goods-card-header">
+      <img class="goods-img" src="{{item.img}}" alt="商品图片">
+    </ion-card-header>
+
+    <ion-card-content class="goods-card-content">
+      <ion-card-title class="goods-title" *ngIf="item.title"> {{item.title}} </ion-card-title>
+      <ion-label class="goods-vip-rice" *ngIf="item.aPrice"> 秒杀价：￥{{item.aPrice}} </ion-label>
+      <ion-label class="goods-vip-rice" *ngIf="item.vPrice && !item.aPrice"> 会员价：￥{{item.vPrice}} </ion-label>
+      <ion-label class="goods-price" [ngClass]="{'goods-price-line': item.aPrice}" *ngIf="item.price"> 市场价：￥{{item.price}} </ion-label>
+      <ion-label class="goods-shop" *ngIf="item.shopName">
+        <h6 class="goods-shop-name">{{item.shopName}}</h6>
+        <h6 class="goods-shop-enter" (click)="selectShop($event,item.shopId)"> 进店> </h6>
+      </ion-label>
+    </ion-card-content>
+  </ion-card>
+</div>

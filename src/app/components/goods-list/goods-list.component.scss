@@ -1,0 +1,69 @@
+.goods-list-component {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 15px 1.5vw 0;
+
+  .goods-card {
+    width: 46%;
+    margin: 0 0 4% 0;
+    background-color: white;
+
+    .goods-card-header {
+      padding: 0;
+
+      .goods-img {
+        width: 100%;
+        height: 45vw;
+      }
+    }
+
+    .goods-card-content {
+      padding: 10px;
+      background-color: #fff;
+
+      >* {
+        display: block;
+        line-height: 1.8;
+        font-size: 2.4vw;
+      }
+
+      .goods-vip-rice {
+        color: red;
+      }
+
+      .goods-price {
+        color: #888;
+      }
+
+      .goods-price-line {
+        text-decoration-line: line-through;
+      }
+
+      .goods-shop {
+        display: flex;
+        align-items: center;
+
+        >* {
+          display: inline-block;
+          font-size: 2vw;
+          margin: 0;
+        }
+
+        .goods-shop-name {
+          color: #888;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          padding-right: 5px;
+          width: 60%;
+        }
+
+        .goods-shop-enter {
+          color: #000;
+        }
+      }
+    }
+  }
+}

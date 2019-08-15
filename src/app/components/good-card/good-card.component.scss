@@ -1,0 +1,64 @@
+.good-card {
+  margin: 5vw 0 0;
+  background-color: white;
+  width: 45vw;
+
+  .good-card-header {
+    padding: 0;
+    width: 45vw;
+    height: 55vw;
+    overflow: hidden;
+
+    .good-img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .good-card-content {
+    padding: 10px;
+    background-color: #fff;
+
+    >* {
+      display: block;
+      line-height: 1.8;
+      font-size: 2.4vw;
+    }
+
+    .good-vip-rice {
+      color: red;
+    }
+
+    .good-price {
+      color: #888;
+    }
+
+    .good-price-line {
+      text-decoration-line: line-through;
+    }
+
+    .good-shop {
+      display: flex;
+      align-items: center;
+
+      >* {
+        display: inline-block;
+        font-size: 2vw;
+        margin: 0;
+      }
+
+      .good-shop-name {
+        color: #888;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding-right: 5px;
+        width: 60%;
+      }
+
+      .good-shop-enter {
+        color: #000;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<div class="evaluate-card">
+  <div class="title">
+    <div class="user-box" (click)="chooseUser()">
+      <img class="user-photo" [src]="evaluate.userPhoto" alt="头像">
+      <span class="user-name">{{evaluate.userName}}</span>
+      <img class="user-badge" *ngIf="evaluate.isVip" src="assets/img/car.jpg"/>
+    </div>
+    <span class="time">{{evaluate.time}}</span>
+  </div>
+  <p class="info">{{evaluate.info}}</p>
+  <div class="img-box" *ngIf="evaluate.imgList">
+    <img *ngFor="let item of evaluate.imgList" [src]="item">
+  </div>
+</div>

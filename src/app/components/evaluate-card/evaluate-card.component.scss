@@ -1,0 +1,57 @@
+.evaluate-card {
+  padding: 15px;
+  background-color: white;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .user-box {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+
+      .user-photo {
+        width: 8vw;
+        height: 8vw;
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      .user-name {
+        margin: 0 5px 0 10px;
+        line-height: 1;
+        height: var(--font-26);
+      }
+
+      .user-badge {
+        display: inline-block;
+        height: var(--font-26);
+      }
+    }
+
+    .time {
+      font-size: var(--font-24);
+      color: var(--color-subtext);
+    }
+  }
+
+  .info {
+    color: var(--color-subtext);
+    font-size: var(--font-24);
+    line-height: 1.5;
+  }
+
+  .img-box {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    flex-wrap: wrap;
+
+    img {
+      width: 21vw;
+      margin-top: var(--layout-spacing);
+    }
+  }
+}

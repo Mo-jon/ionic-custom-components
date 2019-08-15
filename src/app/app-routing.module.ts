@@ -14,7 +14,13 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
-  }
+  },
+  {
+    path: 'goodCard', loadChildren: './good-card/good-card.module#GoodCardPageModule'
+  },
+  {
+    path: 'evaluateCard', loadChildren: './evaluate-card/evaluate-card.module#EvaluateCardPageModule'
+  },
 ];
 
 @NgModule({
@@ -23,4 +29,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
