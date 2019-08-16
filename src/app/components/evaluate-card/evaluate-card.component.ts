@@ -10,7 +10,7 @@ export interface EvaluateData {
   imgList?: Array<string>;
 }
 @Component({
-  selector: 'app-evaluate-card',
+  selector: 'evaluate-card',
   templateUrl: './evaluate-card.component.html',
   styleUrls: ['./evaluate-card.component.scss'],
 })

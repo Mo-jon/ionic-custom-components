@@ -22,8 +22,8 @@ export class AppComponent {
       icon: 'list'
     },
     {
-      title: 'goodCard',
-      url: '/goodCard',
+      title: 'goodsCard',
+      url: '/goodsCard',
       icon: 'list'
     },
     {

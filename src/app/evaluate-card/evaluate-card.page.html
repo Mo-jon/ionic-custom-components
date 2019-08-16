@@ -10,5 +10,5 @@
 </ion-header>
 
 <ion-content>
-  <app-evaluate-card *ngFor="let item of evaluate" [evaluate]="item" (clickUser)="clickUser(item.userId)"></app-evaluate-card>
+  <evaluate-card *ngFor="let item of evaluateList" [evaluate]="item" (clickUser)="clickUser(item.userId)"></evaluate-card>
 </ion-content>

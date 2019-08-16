@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { GoodsData } from '../components/good-card/good-card.component';
+import { GoodsData } from '../components/goods-card/goods-card.component';
 
 @Component({
-  selector: 'app-good-card',
-  templateUrl: './good-card.page.html',
-  styleUrls: ['./good-card.page.scss'],
+  selector: 'app-goods-card',
+  templateUrl: './goods-card.page.html',
+  styleUrls: ['./goods-card.page.scss'],
 })
-export class GoodCardPage implements OnInit {
+export class GoodsCardPage implements OnInit {
   private goods: Array<GoodsData>;
 
   constructor() {
@@ -49,11 +49,11 @@ export class GoodCardPage implements OnInit {
 
   // 进入商品
   enterGoods(id: number) {
-    console.log('进入商品', id);
+    console.log('商品', id);
   }
 
   // 进入店铺
   enterShop(id: number) {
-    console.log('进入店铺', id);
+    console.log('店铺', id);
   }
 }

@@ -1,17 +1,16 @@
-<ion-card class="good-card" (click)="selectGoods(goods.id)">
-  <ion-card-header class="good-card-header">
+<ion-card class="goods-card" (click)="selectGoods(goods.id)">
+  <ion-card-header class="goods-card-header">
     <img class="good-img" src="{{goods.img}}" alt="商品图片">
   </ion-card-header>
 
-  <ion-card-content class="good-card-content">
+  <ion-card-content class="goods-card-content">
     <ion-card-title class="good-title" *ngIf="goods.title"> {{goods.title}} </ion-card-title>
     <ion-label class="good-vip-rice" *ngIf="goods.aPrice"> 秒杀价：￥{{goods.aPrice}} </ion-label>
     <ion-label class="good-vip-rice" *ngIf="goods.vPrice && !goods.aPrice"> 会员价：￥{{goods.vPrice}} </ion-label>
-    <ion-label class="good-price" [ngClass]="{'good-price-line': goods.aPrice}" *ngIf="goods.price"> 市场价：￥{{goods.price}} </ion-label>
+    <ion-label class="good-price" *ngIf="goods.price" [ngClass]="{'good-price-line': goods.aPrice}"> 市场价：￥{{goods.price}} </ion-label>
     <ion-label class="good-shop" *ngIf="goods.shopName">
       <h6 class="good-shop-name">{{goods.shopName}}</h6>
       <h6 class="good-shop-enter" (click)="selectShop($event,goods.shopId)"> 进店> </h6>
     </ion-label>
   </ion-card-content>
 </ion-card>
-

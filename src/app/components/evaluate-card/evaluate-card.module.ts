@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { IonicModule } from '@ionic/angular';
 import { EvaluateCardComponent } from './evaluate-card.component';
 
 
@@ -8,7 +9,8 @@ import { EvaluateCardComponent } from './evaluate-card.component';
     EvaluateCardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    IonicModule
   ],
   exports: [
     EvaluateCardComponent

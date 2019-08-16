@@ -22,36 +22,36 @@
       .user-name {
         margin: 0 5px 0 10px;
         line-height: 1;
-        height: var(--font-26);
+        height: 3vw;
       }
 
       .user-badge {
         display: inline-block;
-        height: var(--font-26);
+        height: 3vw;
       }
     }
 
     .time {
-      font-size: var(--font-24);
-      color: var(--color-subtext);
+      font-size: 3vw;
+      color: #ccc;
     }
   }
 
   .info {
-    color: var(--color-subtext);
-    font-size: var(--font-24);
+    font-size: 2.4vw;
     line-height: 1.5;
   }
 
   .img-box {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-flow: row;
     flex-wrap: wrap;
 
     img {
-      width: 21vw;
-      margin-top: var(--layout-spacing);
+      width: 20vw;
+      margin-top: 10px;
+      margin-right: 10px;
     }
   }
 }

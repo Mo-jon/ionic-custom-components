@@ -6,10 +6,10 @@ import { EvaluateData } from '../components/evaluate-card/evaluate-card.componen
   styleUrls: ['./evaluate-card.page.scss'],
 })
 export class EvaluateCardPage implements OnInit {
-  private evaluate: Array<EvaluateData>;
+  private evaluateList: Array<EvaluateData>;
 
   constructor() {
-    this.evaluate = [
+    this.evaluateList = [
       {
         userId: 1,
         userName: '用户名',

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 /**
  * @id -商品id
@@ -22,14 +22,14 @@ export interface GoodsData {
 }
 
 @Component({
-  selector: 'app-goods-list-component',
-  templateUrl: './goods-list-component.component.html',
-  styleUrls: ['./goods-list-component.component.scss'],
+  selector: 'goods-card',
+  templateUrl: './goods-card.component.html',
+  styleUrls: ['./goods-card.component.scss'],
 })
-export class GoodsListComponent implements OnInit {
+export class GoodsCardComponent implements OnInit {
 
   // 加载列表数据
-  @Input() listData: Array<GoodsData> = [];
+  @Input() goods: GoodsData;
 
   // 进入商品详情
   @Output() enterGoods = new EventEmitter<number>();

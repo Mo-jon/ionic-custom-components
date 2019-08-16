@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
-import { GoodCardComponent } from './good-card.component';
+import { GoodsCardComponent } from './goods-card.component';
 
 
 @NgModule({
   declarations: [
-    GoodCardComponent
+    GoodsCardComponent
   ],
   imports: [
     CommonModule,
     IonicModule
   ],
   exports: [
-    GoodCardComponent
+    GoodsCardComponent
   ]
 })
-export class GoodCardModule { }
+export class GoodsCardModule { }

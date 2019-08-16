@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
-import { GoodCardPage } from './good-card.page';
-import { GoodCardModule } from '../components/good-card/good-card.module';
+import { GoodsCardPage } from './goods-card.page';
+import { GoodsCardModule } from '../components/goods-card/goods-card.module';
 
 const routes: Routes = [
   {
     path: '',
-    component: GoodCardPage
+    component: GoodsCardPage
   }
 ];
 
@@ -19,8 +19,8 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes),
-    GoodCardModule
+    GoodsCardModule
   ],
-  declarations: [GoodCardPage]
+  declarations: [GoodsCardPage]
 })
-export class GoodCardPageModule {}
+export class GoodsCardPageModule {}
