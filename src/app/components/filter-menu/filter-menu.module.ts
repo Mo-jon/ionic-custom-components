@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
-import { SideMenuComponent } from './side-menu.component';
+import { FilterMenuComponent } from './filter-menu.component';
 
 
 @NgModule({
-  declarations: [SideMenuComponent],
+  declarations: [FilterMenuComponent],
   imports: [
     CommonModule,
     IonicModule
   ],
   exports: [
-    SideMenuComponent
+    FilterMenuComponent
   ]
 })
-export class SideMenuModule { }
+export class FilterMenuModule { }

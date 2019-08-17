@@ -1,0 +1,24 @@
+<ion-menu side="end" menuId="filterMenu" contentId="content" class="filter-menu">
+  <ion-header class="filter-menu-header" no-border>
+    <ion-toolbar>
+      <ion-title>筛选</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="filter-menu-content">
+    <div lines="none" class="menu-list">
+      <div class="menu-item" *ngFor="let item of filterList">
+        <h4 class="menu-item-title">
+          {{item.title}}
+        </h4>
+        <div class="menu-item-name">
+          <span
+          *ngFor="let type of item.child"
+          (click)="chooseType(item.id, type.id)"
+          [ngClass]="{'active': type.id==item.sChildId}"
+          >{{type.name}}</span>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-menu>
+

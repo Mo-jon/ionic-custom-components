@@ -21,6 +21,9 @@ const routes: Routes = [
   {
     path: 'evaluateCard', loadChildren: './evaluate-card/evaluate-card.module#EvaluateCardPageModule'
   },
+  {
+    path: 'filterMenu', loadChildren: './filter-menu/filter-menu.module#FilterMenuPageModule'
+  },
 ];
 
 @NgModule({

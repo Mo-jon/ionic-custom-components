@@ -9,8 +9,10 @@
 
     .user-box {
       display: flex;
+      flex: 1;
       flex-wrap: nowrap;
       align-items: center;
+      justify-content: flex-start;
 
       .user-photo {
         width: 8vw;
@@ -21,8 +23,7 @@
 
       .user-name {
         margin: 0 5px 0 10px;
-        line-height: 1;
-        height: 3vw;
+        font-size: 4vw;
       }
 
       .user-badge {
@@ -34,12 +35,15 @@
     .time {
       font-size: 3vw;
       color: #ccc;
+      width: 25vw;
+      text-align: right;
     }
   }
 
   .info {
     font-size: 2.4vw;
     line-height: 1.5;
+    text-align: justify;
   }
 
   .img-box {

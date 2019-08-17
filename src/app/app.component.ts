@@ -31,6 +31,11 @@ export class AppComponent {
       url: '/evaluateCard',
       icon: 'list'
     },
+    {
+      title: 'filterMenu',
+      url: '/filterMenu',
+      icon: 'list'
+    },
   ];
 
   constructor(

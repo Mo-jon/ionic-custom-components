@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+        FilterMenu
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="content">
+  <ion-button color="primary" (click)="openFilter()"> 分类筛选 </ion-button>
+</ion-content>
+
+<filter-menu [filterList]="filterList" (choose)="chooseFiler($event)"></filter-menu>
