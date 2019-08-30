@@ -23,6 +23,9 @@
       display: block;
       line-height: 1.8;
       font-size: 2.4vw;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
 
     .good-vip-rice {

@@ -36,6 +36,11 @@ export class AppComponent {
       url: '/filterMenu',
       icon: 'list'
     },
+    {
+      title: 'shareMoldal',
+      url: '/shareMoldal',
+      icon: 'list'
+    },
   ];
 
   constructor(

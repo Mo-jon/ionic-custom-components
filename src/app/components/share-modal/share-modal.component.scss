@@ -1,0 +1,27 @@
+.share-modal {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  padding: 15vw 0;
+
+  .share-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 15vw;
+    width: 100%;
+
+    .share-btn {
+      width: 20vw;
+      margin: 0 10vw;
+    }
+  }
+
+  .share-close {
+    width: 10vw;
+  }
+}

@@ -4,11 +4,11 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-        evaluateCard
+      shareMoldal
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <evaluate-card *ngFor="let item of evaluateList" [evaluate]="item"></evaluate-card>
+  <ion-button color="primary" (click)="openShare()"> 分享 </ion-button>
 </ion-content>

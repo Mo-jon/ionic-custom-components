@@ -24,6 +24,10 @@ const routes: Routes = [
   {
     path: 'filterMenu', loadChildren: './filter-menu/filter-menu.module#FilterMenuPageModule'
   },
+  {
+    path: 'shareMoldal', loadChildren: './share-moldal/share-moldal.module#ShareMoldalPageModule'
+  },
+
 ];
 
 @NgModule({

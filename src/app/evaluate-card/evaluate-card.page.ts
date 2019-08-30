@@ -24,7 +24,7 @@ export class EvaluateCardPage implements OnInit {
         ]
       },
       {
-        userId: 1,
+        userId: 2,
         userName: '岳飞',
         userPhoto: 'assets/img/car.jpg',
         isVip: false,

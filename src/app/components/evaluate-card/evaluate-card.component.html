@@ -1,6 +1,6 @@
 <div class="evaluate-card">
   <div class="title">
-    <div class="user-box" (click)="chooseUser()">
+    <div class="user-box" (click)="chooseUser(evaluate.userId)">
       <img class="user-photo" [src]="evaluate.userPhoto" alt="头像">
       <span class="user-name">{{evaluate.userName}}</span>
       <img class="user-badge" *ngIf="evaluate.isVip" src="assets/img/car.jpg"/>

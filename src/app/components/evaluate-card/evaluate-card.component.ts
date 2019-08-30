@@ -16,13 +16,14 @@ export interface EvaluateData {
 })
 export class EvaluateCardComponent implements OnInit {
   @Input() evaluate: EvaluateData;
-  @Output() clickUser = new EventEmitter();
+  @Output() clickUser = new EventEmitter<number>();
 
   constructor() { }
 
   ngOnInit() { }
 
-  chooseUser() {
-    this.clickUser.emit();
+  chooseUser(userId: number) {
+    console.log('点击用户', userId);
+    this.clickUser.emit(userId);
   }
 }
