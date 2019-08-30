@@ -3,11 +3,11 @@ import { ShareModalComponent } from 'src/app/components/share-modal/share-modal.
 import { ModalController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-share-moldal',
-  templateUrl: './share-moldal.page.html',
-  styleUrls: ['./share-moldal.page.scss'],
+  selector: 'app-share-modal',
+  templateUrl: './share-modal.page.html',
+  styleUrls: ['./share-modal.page.scss'],
 })
-export class ShareMoldalPage implements OnInit {
+export class ShareModalPage implements OnInit {
 
   constructor(
     public modalCtrl: ModalController

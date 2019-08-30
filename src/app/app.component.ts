@@ -37,8 +37,8 @@ export class AppComponent {
       icon: 'list'
     },
     {
-      title: 'shareMoldal',
-      url: '/shareMoldal',
+      title: 'shareModal',
+      url: '/shareModal',
       icon: 'list'
     },
   ];

@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
-import { ShareMoldalPage } from './share-moldal.page';
+import { ShareModalPage } from './share-modal.page';
 import { ShareModalModule } from 'src/app/components/share-modal/share-modal.module';
 
 const routes: Routes = [
   {
     path: '',
-    component: ShareMoldalPage
+    component: ShareModalPage
   }
 ];
 
@@ -21,6 +21,6 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     ShareModalModule
   ],
-  declarations: [ShareMoldalPage]
+  declarations: [ShareModalPage]
 })
-export class ShareMoldalPageModule {}
+export class ShareModalPageModule {}

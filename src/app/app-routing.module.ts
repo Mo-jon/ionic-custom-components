@@ -25,7 +25,7 @@ const routes: Routes = [
     path: 'filterMenu', loadChildren: './filter-menu/filter-menu.module#FilterMenuPageModule'
   },
   {
-    path: 'shareMoldal', loadChildren: './share-moldal/share-moldal.module#ShareMoldalPageModule'
+    path: 'shareModal', loadChildren: './share-modal/share-modal.module#ShareModalPageModule'
   },
 
 ];
