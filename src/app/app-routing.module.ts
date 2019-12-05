@@ -1,33 +1,40 @@
-import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { PreloadAllModules, RouterModule, Routes } from "@angular/router";
 
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    path: "",
+    redirectTo: "home",
+    pathMatch: "full"
   },
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+    path: "home",
+    loadChildren: () => import("./home/home.module").then(m => m.HomePageModule)
   },
   {
-    path: 'list',
-    loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
+    path: "list",
+    loadChildren: () => import("./list/list.module").then(m => m.ListPageModule)
   },
   {
-    path: 'goodsCard', loadChildren: './goods-card/goods-card.module#GoodsCardPageModule'
+    path: "goodsCard",
+    loadChildren: "./goods-card/goods-card.module#GoodsCardPageModule"
   },
   {
-    path: 'evaluateCard', loadChildren: './evaluate-card/evaluate-card.module#EvaluateCardPageModule'
+    path: "evaluateCard",
+    loadChildren: "./evaluate-card/evaluate-card.module#EvaluateCardPageModule"
   },
   {
-    path: 'filterMenu', loadChildren: './filter-menu/filter-menu.module#FilterMenuPageModule'
+    path: "filterMenu",
+    loadChildren: "./filter-menu/filter-menu.module#FilterMenuPageModule"
   },
   {
-    path: 'shareModal', loadChildren: './share-modal/share-modal.module#ShareModalPageModule'
+    path: "shareModal",
+    loadChildren: "./share-modal/share-modal.module#ShareModalPageModule"
   },
-
+  {
+    path: "searchInput",
+    loadChildren: "./search-input/search-input.module#SearchInputPageModule"
+  }
 ];
 
 @NgModule({
@@ -36,4 +43,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

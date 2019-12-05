@@ -12,34 +12,39 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 export class AppComponent {
   public appPages = [
     {
-      title: 'Home',
+      title: '首页',
       url: '/home',
       icon: 'home'
     },
     {
-      title: 'List',
+      title: '列表',
       url: '/list',
       icon: 'list'
     },
     {
-      title: 'goodsCard',
+      title: '商品',
       url: '/goodsCard',
-      icon: 'list'
+      icon: 'card'
     },
     {
-      title: 'evaluateCard',
+      title: '评价',
       url: '/evaluateCard',
-      icon: 'list'
+      icon: 'create'
     },
     {
-      title: 'filterMenu',
+      title: '筛选',
       url: '/filterMenu',
-      icon: 'list'
+      icon: 'color-filter'
     },
     {
-      title: 'shareModal',
+      title: '分享',
       url: '/shareModal',
-      icon: 'list'
+      icon: 'share-alt'
+    },
+    {
+      title: '搜索',
+      url: '/searchInput',
+      icon: 'search'
     },
   ];
 

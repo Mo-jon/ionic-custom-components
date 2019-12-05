@@ -1,0 +1,9 @@
+<div class="search-model">
+  <div class="search-input" [ngStyle]="{'background-color': backgroundColor}">
+    <img class="icon" *ngIf="icon" src="assets/icon/search.svg">
+    <input class="input" type="text" [placeholder]="placeholder" [(ngModel)]="value" (ngModelChange)="change()"
+      [disabled]="disabled">
+  </div>
+
+  <div class="btn" *ngIf="searchBtn" (click)="searchClick()">搜索</div>
+</div>

@@ -3,12 +3,10 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>
-      share-modal
-    </ion-title>
+    <ion-title>search-input</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-button color="primary" (click)="openShare()"> 分享 </ion-button>
+  <search-input placeholder='请输入关键字' (search)="search($event)"></search-input>
 </ion-content>
