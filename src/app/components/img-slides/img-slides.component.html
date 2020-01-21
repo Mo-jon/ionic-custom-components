@@ -1,0 +1,5 @@
+<ion-slides pager="true" [options]="slideOpts" class="img-slides">
+  <ion-slide *ngFor="let item of list">
+    <img class="slide-img" [src]="item.src" (click)="clickImg(item)">
+  </ion-slide>
+</ion-slides>

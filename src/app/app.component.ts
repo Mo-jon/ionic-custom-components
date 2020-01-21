@@ -56,6 +56,11 @@ export class AppComponent {
       url: '/actionSheet',
       icon: 'checkmark-circle-outline'
     },
+    {
+      title: '图片轮播',
+      url: '/imgSlides',
+      icon: 'play'
+    },
   ];
 
   constructor(

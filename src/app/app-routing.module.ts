@@ -39,8 +39,8 @@ const routes: Routes = [
     path: 'waterfall', 
     loadChildren: './waterfall/waterfall.module#WaterfallPageModule' 
   },
-  { path: 'actionSheet', loadChildren: './action-sheet/action-sheet.module#ActionSheetPageModule' }
-
+  { path: 'actionSheet', loadChildren: './action-sheet/action-sheet.module#ActionSheetPageModule' },
+  { path: 'imgSlides', loadChildren: './img-slides/img-slides.module#ImgSlidesPageModule' }
 ];
 
 @NgModule({
