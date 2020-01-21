@@ -1,0 +1,39 @@
+.action-sheet {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100vh;
+
+  .content {
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+    .list {
+      background: white;
+      overflow-y: auto;
+      max-height: 60vh;
+      display: block;
+
+      .item {
+        line-height: 1;
+        text-align: center;
+
+        &.active {
+          color: red;
+        }
+      }
+    }
+
+    .sure-btn {
+      line-height: 3;
+      text-align: center;
+      color: white;
+      background-color: red;
+    }
+  }
+}

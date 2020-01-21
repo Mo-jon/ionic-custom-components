@@ -1,0 +1,11 @@
+.goods-list-component {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .placeholder {
+    width: 45vw;
+    height: 0;
+  }
+}

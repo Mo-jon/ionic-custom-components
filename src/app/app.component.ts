@@ -46,6 +46,16 @@ export class AppComponent {
       url: '/searchInput',
       icon: 'search'
     },
+    {
+      title: '瀑布流',
+      url: '/waterfall',
+      icon: 'reorder'
+    },
+    {
+      title: '弹框选择列表',
+      url: '/actionSheet',
+      icon: 'checkmark-circle-outline'
+    },
   ];
 
   constructor(

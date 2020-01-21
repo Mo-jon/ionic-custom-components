@@ -1,0 +1,10 @@
+<div class="action-sheet" (click)="dismiss('close')">
+  <div class="content">
+    <ion-list lines="none" class="list">
+      <ion-item class="item" *ngFor="let item of list" [ngClass]="{'active': item.id==activeId}" (click)="chooseItem(item); $event.stopPropagation()">
+        <ion-label class="name"> {{item.name}} </ion-label>
+      </ion-item>
+    </ion-list>
+    <div class="sure-btn" *ngIf="sureBtn" (click)="dismiss('sure'); $event.stopPropagation()">确定</div>
+  </div>
+</div>

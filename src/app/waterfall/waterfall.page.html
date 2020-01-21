@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      waterfall
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="waterfall-component">
+    <goods-card *ngFor="let item of goods" [goods]="item" (enterGoods)="enterGoods(item.id)"
+      (enterShop)="enterShop(item.shopId)">
+    </goods-card>
+    <div class="placeholder"></div>
+  </div>
+</ion-content>

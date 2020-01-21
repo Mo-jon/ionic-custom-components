@@ -34,7 +34,13 @@ const routes: Routes = [
   {
     path: "searchInput",
     loadChildren: "./search-input/search-input.module#SearchInputPageModule"
-  }
+  },
+  { 
+    path: 'waterfall', 
+    loadChildren: './waterfall/waterfall.module#WaterfallPageModule' 
+  },
+  { path: 'actionSheet', loadChildren: './action-sheet/action-sheet.module#ActionSheetPageModule' }
+
 ];
 
 @NgModule({
