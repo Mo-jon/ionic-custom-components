@@ -1,0 +1,11 @@
+// 透明头部导航 start
+.header-transparent {
+  ion-toolbar {
+    --background: transparent;
+    --opacity: 0;
+  }
+}
+.content {
+  --padding-top: 0;
+}
+// 透明头部导航 end

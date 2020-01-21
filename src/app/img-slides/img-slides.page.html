@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header class="header-transparent">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
@@ -9,6 +9,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<!-- fullscreen透明头部设置 -->
+<ion-content class="content" fullscreen="true">
   <img-slides [list]="imgList" (chooseImg)="slidesImg($event)"></img-slides>
 </ion-content>
