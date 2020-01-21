@@ -32,12 +32,21 @@ interface ChildType {
   styleUrls: ['./filter-menu.component.scss'],
 })
 export class FilterMenuComponent implements OnInit {
+  // FilterMenu 组件初始id
+  static classId = 0;
+  // 菜单id, 用于给每个FilterMenuComponent创建独立的id
+  sideMenuId = 'sideMenu';
+  // 弹出容器id
+  @Input() contentId = 'content';
   // 分类列表
   @Input() filterList: Array<FilterData> = [];
   // 点击选择事件
   @Output() choose = new EventEmitter();
 
-  constructor(private menu: MenuController) { }
+  constructor(private menu: MenuController) {
+    this.sideMenuId = `sideMenu${FilterMenuComponent.classId++}`;
+    console.log('菜单id', this.sideMenuId);
+  }
 
   ngOnInit() {
   }
@@ -49,6 +58,6 @@ export class FilterMenuComponent implements OnInit {
 
   // 显示菜单
   showMenu() {
-    this.menu.toggle('filterMenu');
+    this.menu.toggle(this.sideMenuId);
   }
 }
