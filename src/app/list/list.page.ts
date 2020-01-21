@@ -39,12 +39,14 @@ export class ListPage implements OnInit {
   }
 
   // 获取列表
-  getList(refresh = false, event: any = null) {
+  getList(refresh = false) {
+    // 是否刷新列表
+    if (refresh) {
+      this.lastId = 0;
+      this.list = [];
+    }
     return new Promise(async (resolve, reject) => {
-      if (refresh && !event) {
-        await this.showLoading();
-      }
-      await this.dataApi()
+      this.dataApi()
         .then((resp: any) => {
           console.log(resp);
           if (resp.error) {
@@ -61,18 +63,13 @@ export class ListPage implements OnInit {
 
           // 分页处理
           this.infiniteDisabled = listData.length < this.showSize;
-          this.list = refresh ? listData : this.list.concat(listData);
+          this.list = this.list.concat(listData);
           this.listNull = this.list.length < 1;
           resolve();
         })
         .catch((error: any) => {
           console.error(error);
           reject();
-        })
-        .finally(() => {
-          if (event) {
-            event.target.complete();
-          }
         });
     });
   }
@@ -118,16 +115,17 @@ export class ListPage implements OnInit {
   }
 
   // 下拉刷新
-  doRefresh(event: any) {
+  async doRefresh(event: any) {
     console.log("下拉刷新");
-    this.lastId = 0;
-    this.getList(true, event);
+    await this.getList(true);
+    await event.target.complete();
   }
 
   // 上拉加载
-  loadData(event: any) {
+  async loadData(event: any) {
     console.log("上拉加载");
-    this.getList(false, event);
+    await this.getList();
+    await event.target.complete();
   }
 
   // 跳转详情
